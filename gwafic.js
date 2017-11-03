@@ -63,7 +63,7 @@ function Ball() {
         ellipse(this.xPos, this.yPos, this.diameter, this.diameter);
     }
 
-    this.mouseInRange() {
+    this.mouseInRange = function() {
         if(    (this.xMouseRel <= 50 && this.xMouseRel >= -50)
             || (this.yMouseRel <= 50 && this.yMouseRel <= -50))
         {
