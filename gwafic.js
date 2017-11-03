@@ -42,8 +42,8 @@ function Ball() {
             this.xAccel = map(this.xMouseRel, -50, 50, -1, 1);
             this.yAccel = map(this.yMouseRel, -50, 50, -1, 1);
         } else {
-            this.xAccel = -0.2;
-            this.yAccel = -0.2;
+            this.xAccel *= 0.9;
+            this.yAccel *= 0.9;
         }
 
         this.xSpd += this.xAccel;
@@ -58,6 +58,9 @@ function Ball() {
         // Step 3: Apply new speed value to get new xPos and yPos
         this.xPos += this.xSpd;
         this.yPos += this.ySpd;
+
+        this.xMid = this.xPos + 25;
+        this.yMid = this.yPos + 25;
     }
 
     this.draw = function() {
