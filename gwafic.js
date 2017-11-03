@@ -1,5 +1,5 @@
 function setup() {
-
+    frameRate(30);
 }
 
 var xPos = 50;
