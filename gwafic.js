@@ -67,7 +67,7 @@ function Ball() {
     }
 
     this.mouseInRange = function() {
-        if(dist(mouseX, mouseY, this.xPos, this.yPos) >= 50) {
+        if(dist(mouseX, mouseY, this.xPos, this.yPos) <= 50) {
             return true;
         } else {
             return false;
