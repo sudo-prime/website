@@ -10,6 +10,7 @@ function setup() {
 function draw() {
     // Step 1: Calculate ball's position
     ball.update();
+    console.log(ball.xMid);
 
     // Step 2: Clear previous frame
     background('white');
