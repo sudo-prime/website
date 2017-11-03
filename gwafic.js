@@ -1,7 +1,7 @@
-void setup() {
-  size(200, 200);
-  noLoop();
+function setup() {
+
 }
-void draw() {
-  line(10, 10, 190, 190);
+
+function draw() {
+  ellipse(50, 50, 80, 80);
 }
