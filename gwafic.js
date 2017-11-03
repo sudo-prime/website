@@ -2,7 +2,7 @@ var ball;
 
 function setup() {
     createCanvas(1000, 1000);
-    frameRate(30);
+    frameRate(60);
 
     ball = new Ball();
 }
@@ -41,11 +41,20 @@ function Ball() {
         // Step 2: Calulate change in speed value
         if(this.mouseInRange()) {
             // Update speed values depending on where mouse is
-            this.xAccel = map(this.xMouseRel, -50, 50, -1, 1);
-            this.yAccel = map(this.yMouseRel, -50, 50, -1, 1);
+            if((this.xSpd * this.xMouseRel) >= 0) {
+                this.xAccel = map(this.xMouseRel, 50, 0, 0, 1);
+            } else {
+                this.xAccel = map(this.xMouseRel, 50, 0, 0, -1);
+            }
+
+            if((this.ySpd * this.yMouseRel) >= 0) {
+                this.yAccel = map(this.yMouseRel, 50, 0, 0, 1);
+            } else {
+                this.yAccel = map(this.yMouseRel, 50, 0, 0, -1);
+            }
         } else {
-            this.xAccel *= 0.9;
-            this.yAccel *= 0.9;
+            this.xAccel *= 0.99;
+            this.yAccel *= 0.99;
         }
 
         this.xSpd += this.xAccel;
@@ -60,6 +69,8 @@ function Ball() {
         // Step 3: Apply new speed value to get new xPos and yPos
         this.xPos += this.xSpd;
         this.yPos += this.ySpd;
+
+        this.bounce();
     }
 
     this.draw = function() {
@@ -71,6 +82,14 @@ function Ball() {
             return true;
         } else {
             return false;
+        }
+    }
+
+    this.bounce = function() {
+        if((this.xPos + this.diameter) > width || this.xPos < 0) {
+            this.xSpd *= -1;
+        } else if((this.yPos + this.diameter) > height || this.yPos < 0) {
+            this.ySpd *= -1;
         }
     }
 }
