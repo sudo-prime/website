@@ -38,7 +38,6 @@ function Ball() {
         // Step 2: Calulate change in speed value
         if(this.mouseInRange()) {
             // Update speed values depending on where mouse is
-            if()
             this.xAccel = map(this.xMouseRel, -50, 50, -1, 1);
             this.yAccel = map(this.yMouseRel, -50, 50, -1, 1);
         } else {
