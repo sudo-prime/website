@@ -10,7 +10,7 @@ function setup() {
 function draw() {
     // Step 1: Calculate ball's position
     ball.update();
-    console.log(ball.xMid);
+    console.log(ball.xAccel + " " + ball.yAccel);
 
     // Step 2: Clear previous frame
     clear();
