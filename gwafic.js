@@ -13,15 +13,15 @@ function draw() {
     console.log(ball.xMid);
 
     // Step 2: Clear previous frame
-    background('white');
+    clear();
 
     // Step 3: Draw!
     ball.draw();
 }
 
 function Ball() {
-    this.xPos = random(width  - 50);
-    this.yPos = random(height - 50);
+    this.xPos = random(width);
+    this.yPos = random(height);
     this.xMid = this.xPos + 25;
     this.yMid = this.yPos + 25;
     this.xMouseRel = this.xMid - mouseX;
@@ -31,6 +31,8 @@ function Ball() {
     this.diameter = 50;
 
     this.update = function() {
+        this.xMid = this.xPos + 25;
+        this.yMid = this.yPos + 25;
 
         // Step 1: Update relative mouse position
         this.xMouseRel = this.xMid - mouseX;
@@ -58,9 +60,6 @@ function Ball() {
         // Step 3: Apply new speed value to get new xPos and yPos
         this.xPos += this.xSpd;
         this.yPos += this.ySpd;
-
-        this.xMid = this.xPos + 25;
-        this.yMid = this.yPos + 25;
     }
 
     this.draw = function() {
@@ -68,9 +67,7 @@ function Ball() {
     }
 
     this.mouseInRange = function() {
-        if(    (this.xMouseRel <= 50 && this.xMouseRel >= -50)
-            || (this.yMouseRel <= 50 && this.yMouseRel <= -50))
-        {
+        if(dist(mouseX, mouseY, this.xPos, this.yPos) >= 50) {
             return true;
         } else {
             return false;
