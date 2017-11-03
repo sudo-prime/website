@@ -1,7 +1,7 @@
 var ball;
 
 function setup() {
-    createCanvas(500, 500);
+    createCanvas(1000, 1000);
     frameRate(30);
 
     ball = new Ball();
@@ -32,14 +32,32 @@ function Ball() {
     this.update = function() {
 
         // Step 1: Update relative mouse position
+        this.xMouseRel = this.xMid - mouseX;
+        this.yMouseRel = this.yMid - mouseY;
 
         // Step 2: Calulate change in speed value
         if(this.mouseInRange()) {
             // Update speed values depending on where mouse is
-            var resultMap = map(this.xMouseRel, , 100, 0, width);
+            if()
+            this.xAccel = map(this.xMouseRel, -50, 50, -1, 1);
+            this.yAccel = map(this.yMouseRel, -50, 50, -1, 1);
+        } else {
+            this.xAccel = -0.2;
+            this.yAccel = -0.2;
         }
 
+        this.xSpd += this.xAccel;
+        this.ySpd += this.yAccel;
+
+        this.xSpd = Math.min(10, this.xSpd);
+        this.xSpd = Math.max( 0, this.xSpd);
+
+        this.ySpd = Math.min(10, this.ySpd);
+        this.ySpd = Math.max( 0, this.ySpd);
+
         // Step 3: Apply new speed value to get new xPos and yPos
+        this.xPos += this.xSpd;
+        this.yPos += this.ySpd;
     }
 
     this.draw = function() {
@@ -47,11 +65,9 @@ function Ball() {
     }
 
     this.mouseInRange() {
-        if(    (this.xMouseRel <=  25 && this.xMouseRel >= 0)
-            || (this.xMouseRel <= -25 && this.xMouseRel <= 0)
-            || (this.yMouseRel <=  25 && this.yMouseRel >= 0)
-            || (this.yMouseRel <= -25 && this.yMouseRel <= 0)
-        ) {
+        if(    (this.xMouseRel <= 50 && this.xMouseRel >= -50)
+            || (this.yMouseRel <= 50 && this.yMouseRel <= -50))
+        {
             return true;
         } else {
             return false;
