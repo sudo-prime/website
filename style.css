@@ -8,6 +8,7 @@
 
 .text {
 	text-align: left;
+	width: 300;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
 	margin-left: 20px;
