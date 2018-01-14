@@ -23,7 +23,6 @@
 	left: 350px;
 	top: 60px;
 	font-family: 'Montserrat', sans-serif;
-	margin-top: 150px;
 	font-size: 4em;
 	color: black;
 }
@@ -33,8 +32,8 @@
 	text-align: center;
 	left: 600px;
 	top: 60px;
+	width: 400px;
 	font-family: 'Montserrat', sans-serif;
-	margin-top: 150px;
 	font-size: 4em;
 	color: white;
 }
