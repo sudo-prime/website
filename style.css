@@ -14,6 +14,11 @@
 	margin-left: 20px;
 }
 
+.label {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 3em;
+}
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
