@@ -46,7 +46,7 @@
 
 body {
     background-image: url("back.jpg");
-    background-size: 125%;
+    background-size: 2000px 2000px;
     background-repeat: no-repeat;
     background-position: center center;
 }
