@@ -38,7 +38,7 @@
 
 body {
     background-image: url("back.jpg");
-    background-size: cover;
+    background-size: 150%;
     background-repeat: no-repeat;
     background-position: center center;
 }
