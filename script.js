@@ -1,4 +1,4 @@
-var countDownDate = new Date("Apr 6, 2018 0:00:00").getTime();
+var countDownDate = new Date("Apr 5, 2018 13:00:00").getTime();
 var d = new Date();
 var offset = -5;
 var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
