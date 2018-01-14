@@ -4,7 +4,7 @@
 	font-size: 3em;
 	display: inline-block;
 	width: 100px;
-	margin-left: auto;
+	margin-left: 10%;
 }
 
 .text {
@@ -13,7 +13,6 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
 	margin-left: 20px;
-	margin-right: auto;
 }
 
 .label {
@@ -25,7 +24,7 @@
 }
 
 .container2 {
-	
+
 }
 
 .container {
