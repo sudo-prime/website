@@ -34,7 +34,7 @@
 #cover {
 	position: absolute;
 	background-color: white;
-	width: 300px;
+	width: 600px;
 	height: 100%;
 	left: 0px;
 	top: 0px;
@@ -42,8 +42,8 @@
 
 .container {
 	position: absolute;
-	left: 200px;
-	top: 500px;
+	left: 400px;
+	top: 300px;
 	width: 500px;
 }
 
