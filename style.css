@@ -5,10 +5,12 @@
 	display: inline-block;
 	width: 100px;
 	margin-left: 20%;
+	color: white;
 }
 
 .text {
 	text-align: left;
+	color: white;
 	width: 300;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
@@ -21,6 +23,7 @@
 	margin-right: auto;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
+	color: white;
 }
 
 .container2 {
