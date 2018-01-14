@@ -19,12 +19,12 @@
 
 .label {
 	text-align: center;
-	margin-left: 325px;
+	margin-left: 100px;
 	margin-right: auto;
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 150px;
 	font-size: 4em;
-	color: white;
+	color: black;
 }
 
 .label2 {
@@ -34,7 +34,7 @@
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 150px;
 	font-size: 4em;
-	color: black;
+	color: white;
 }
 
 .container2 {
