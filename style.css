@@ -14,10 +14,10 @@
 }
 
 .text {
-	text-align: right;
+	text-align: left;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
-	margin-left: auto;
+	margin-left: 20px;
 }
 
 .container {
