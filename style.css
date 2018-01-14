@@ -14,13 +14,13 @@
 	width: 300;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 3em;
-	margin-left: 30px;
+	margin-left: 25px;
 }
 
 .label {
 	position: absolute;
 	text-align: center;
-	left: 420px;
+	left: 410px;
 	top: 60px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 4em;
@@ -30,7 +30,7 @@
 .label2 {
 	position: absolute;
 	text-align: center;
-	left: 590px;
+	left: 600px;
 	top: 60px;
 	width: 400px;
 	font-family: 'Montserrat', sans-serif;
