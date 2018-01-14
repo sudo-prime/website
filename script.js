@@ -13,17 +13,17 @@ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 window.onload = function() {
-	document.getElementById("days").innerHTML = days + " DAYS";
-	document.getElementById("hours").innerHTML = hours + " HOURS";
-	document.getElementById("minutes").innerHTML = minutes + " MINUTES";
-	document.getElementById("seconds").innerHTML = seconds + " SECONDS";
+	document.getElementById("days").innerHTML = days;
+	document.getElementById("hours").innerHTML = hours;
+	document.getElementById("minutes").innerHTML = minutes;
+	document.getElementById("seconds").innerHTML = seconds;
 
     if (distance < 0) {
         document.getElementById("message").innerHTML = "PAX IS UPON US!";
-		document.getElementById("days").innerHTML = "0" + " DAYS";
-		document.getElementById("hours").innerHTML = "0" + " HOURS";
-		document.getElementById("minutes").innerHTML = "0" + " MINUTES";
-		document.getElementById("seconds").innerHTML = "0" + " SECONDS";
+		document.getElementById("days").innerHTML = "0";
+		document.getElementById("hours").innerHTML = "0";
+		document.getElementById("minutes").innerHTML = "0";
+		document.getElementById("seconds").innerHTML = "0";
     }
 
     var timer = setInterval(function() {
@@ -40,10 +40,10 @@ window.onload = function() {
         minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-		document.getElementById("days").innerHTML = days + " DAYS";
-		document.getElementById("hours").innerHTML = hours + " HOURS";
-		document.getElementById("minutes").innerHTML = minutes + " MINUTES";
-		document.getElementById("seconds").innerHTML = seconds + " SECONDS";
+		document.getElementById("days").innerHTML = days;
+		document.getElementById("hours").innerHTML = hours;
+		document.getElementById("minutes").innerHTML = minutes;
+		document.getElementById("seconds").innerHTML = seconds;
 
         if (distance < 0) {
             clearInterval(timer);
