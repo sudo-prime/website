@@ -35,3 +35,10 @@
 	margin-right: auto;
 	width: 500px;
 }
+
+body {
+    background-image:    url(images/background.svg);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
