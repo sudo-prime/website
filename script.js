@@ -9,7 +9,7 @@ var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-console.out(document)
+console.log(document)
 
 document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
@@ -19,7 +19,7 @@ if (distance < 0) {
 
 var timer = setInterval(function() {
 
-  now = new Date().getTime();
+  now = new Date().getTime(); 
 
   distance = countDownDate - now;
 
