@@ -13,10 +13,10 @@ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 window.onload = function() {
-	document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+	document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
     if (distance < 0) {
-        document.getElementById("demo").innerHTML = "PAX IS UPON US!";
+        document.getElementById("timer").innerHTML = "PAX IS UPON US!";
     }
 
     var timer = setInterval(function() {
@@ -33,11 +33,11 @@ window.onload = function() {
         minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
         if (distance < 0) {
             clearInterval(timer);
-            document.getElementById("demo").innerHTML = "PAX IS UPON US!";
+            document.getElementById("timer").innerHTML = "PAX IS UPON US!";
         }
     }, 1000);
 }
