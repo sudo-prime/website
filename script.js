@@ -13,10 +13,17 @@ var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 window.onload = function() {
-	document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+	document.getElementById("days").innerHTML = days + " DAYS";
+	document.getElementById("hours").innerHTML = hours + " HOURS";
+	document.getElementById("minutes").innerHTML = minutes + " MINUTES";
+	document.getElementById("seconds").innerHTML = seconds + " SECONDS";
 
     if (distance < 0) {
-        document.getElementById("timer").innerHTML = "PAX IS UPON US!";
+        document.getElementById("message").innerHTML = "PAX IS UPON US!";
+		document.getElementById("days").innerHTML = "0" + " DAYS";
+		document.getElementById("hours").innerHTML = "0" + " HOURS";
+		document.getElementById("minutes").innerHTML = "0" + " MINUTES";
+		document.getElementById("seconds").innerHTML = "0" + " SECONDS";
     }
 
     var timer = setInterval(function() {
@@ -33,7 +40,10 @@ window.onload = function() {
         minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+		document.getElementById("days").innerHTML = days + " DAYS";
+		document.getElementById("hours").innerHTML = hours + " HOURS";
+		document.getElementById("minutes").innerHTML = minutes + " MINUTES";
+		document.getElementById("seconds").innerHTML = seconds + " SECONDS";
 
         if (distance < 0) {
             clearInterval(timer);
