@@ -19,7 +19,6 @@ window.onload = function() {
 	document.getElementById("seconds").innerHTML = seconds;
 
     if (distance < 0) {
-        document.getElementById("message").innerHTML = "PAX IS UPON US!";
 		document.getElementById("days").innerHTML = "0";
 		document.getElementById("hours").innerHTML = "0";
 		document.getElementById("minutes").innerHTML = "0";
@@ -47,7 +46,6 @@ window.onload = function() {
 
         if (distance < 0) {
             clearInterval(timer);
-            document.getElementById("timer").innerHTML = "PAX IS UPON US!";
         }
     }, 1000);
 }
