@@ -1,95 +1,59 @@
-<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset='utf-8'>
 	<title>Home</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' href='style.css'>
 </head>
 <body>
-	<div class="main"> <img class="crop" src="images/image_0.jpg" align="middle" border="0" name="RandomImg" >
-		<div class="links">
-			<table>
-				<tbody>
-					<tr>
-						<td bgcolor="#EF5350"><i class="material-icons">info</i></td>
-						<td bgcolor="#EC407A"><i class="material-icons">code</i></td>
-						<td bgcolor="#BA68C8"><i class="material-icons">headset</i></td>
-					</tr>
-					<tr class="theader">
-						<td><a href="https://news.ycombinator.com/">hacker news</a></td>
-						<td><a href="https://github.com/">github</a></td>
-						<td><a href="https://sophiesfloorboard.blogspot.com/">sophie's floorboard</a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href="http://hackaday.com/">hack-a-day</a></td>
-						<td><a href="https://crates.io/">crates.io</a></td>
-						<td><a href="http://meps.proboards.com/">mount eerie</a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href="http://linux.com/">linux news</a></td>
-						<td><a href="https://travis-ci.org/">travis ci</a></td>
-						<td><a href="http://www.discogs.com/">discogs</a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href="http://arstechnica.com/">ars technica</a></td>
-						<td><a href="http://installgentoo.com">install gentoo</a></td>
-						<td><a href="http://rbt.asia/mu">rebecca black tech</a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href="http://pitchfork.com/">pitchfork</a></td>
-						<td><a href="http://dotshare.it/about">dotshare</a></td>
-						<td><a href="http://www.gnoosic.com/">gnoosic</a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href="https://www.reddit.com/">reddit</a></td>
-						<td><a href="https://wiki.archlinux.org/">arch wiki</a></td>
-						<td><a href=""></a></td>
-					</tr>
-					<!-- <tr>
-						<td bgcolor="#333"><i class="material-icons"></i></td>
-						<td bgcolor="#333"><i class="material-icons"></i></td>
-						<td bgcolor="#333"><i class="material-icons"></i></td>
-					</tr>
-					<tr class="theader">
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-					</tr>
-					<tr class="theader">
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-						<td><a href=""></a></td>
-					</tr> -->
-				</tbody>
-			</table>
-		</div>
-		<div class="searchb">
-			<form method="get" action="http://www.google.com">
-				<input type="text" name="q" placeholder="search" autocomplete="off" autofocus>
-			</form>
-		</div>
-	</div>
-	<script src="script.js"></script>
-	</body>
+  <div class='left'>
+    <img id='image' src='images/image_0.jpg' name='RandomImg' >
+    <div id='welcome1'>
+      <p>Hello again,<br>Nicholas.</p>
+      <p id='welcome2'>Where would you like to go today?</p>
+    </div>
+  </div>
+  <div class='right'>
+    <div class='container'>
+
+      <h1>Popular</h1>
+      <table class="table" id=>
+        <tr>
+          <td><a href='https://www.google.com/'><div class='cell'><img class='fav' src='https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png'><p class='inner'>google</p></div></a></td>
+          <td><a href='https://github.com/sudo-prime'><div class='cell'><img class='fav' src='https://image.flaticon.com/icons/svg/25/25231.svg'><p class='inner'>github</p></div></a></td>
+          <td></td>
+        </tr>
+      </table><br>
+
+      <h1>School</h1>
+      <table class="table">
+        <tr>
+          <td><a href='https://www.google.com/'><div class='cell'><img class='fav' src='http://icons.iconarchive.com/icons/dtafalonso/android-lollipop/256/calendar-icon.png'><p class='inner'>calendar</p></div></a></td>
+          <td><a href='https://one.drexel.edu/'><div class='cell'><img class='fav' src='https://teenlife.s3.amazonaws.com/media/uploads/listings/drexel-university-arts-programs/vWB3dipdyrto.jpg'><p class='inner'>drexel one</p></div></a></td>
+          <td><a href='https://learningcatalytics.com/class_sessions'><div class='cell'><img class='fav' src='https://yt3.ggpht.com/a-/ACSszfFPo0DF472Q3IWSg5tUESBc747zyzFnvY_7Fg=s900-mo-c-c0xffffffff-rj-k-no'><p class='inner'>catalytics</p></div></a></td>
+        </tr>
+      </table><br>
+
+      <h1>Entertainment</h1>
+      <table class="table">
+        <tr>
+          <td><a href='https://www.youtube.com/'><div class='cell'><img class='fav' src='https://i2.wp.com/www.vectorico.com/wp-content/uploads/2018/02/youtube-icon.png?resize=300%2C300'><p class='inner'>youtube</p></div></a></td>
+          <td><a href='https://www.reddit.com/'><div class='cell'><img class='fav' src='https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png'><p class='inner'>reddit</p></div></a></td>
+          <td><a href='https://www.google.com/'><div class='cell'><img class='fav' src='https://www.google.com/favicon.ico'><p class='inner'>google</p></div></a></td>
+        </tr>
+      </table><br>
+
+      <h1>Other</h1>
+      <table class="table">
+        <tr>
+          <td><a href='https://www.google.com/'><div class='cell'><img class='fav' src='https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png'><p class='inner'>google</p></div></a></td>
+          <td><a href='https://www.reddit.com/'><div class='cell'><img class='fav' src='https://www.redditstatic.com/desktop2x/img/favicon/android-icon-192x192.png'><p class='inner'>reddit</p></div></a></td>
+          <td><a href='https://www.google.com/'><div class='cell'><img class='fav' src='https://www.google.com/favicon.ico'><p class='inner'>google</p></div></a></td>
+        </tr>
+        <tr>
+      </table><br>
+    </div>
+  </div>
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='script.js'></script>
 </html>
