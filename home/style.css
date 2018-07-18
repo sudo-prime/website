@@ -3,7 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,900|Raleway:700');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-html, body, p { margin: 0; padding: 0; border: 0; overflow: hidden; }
+html, body { margin: 0; padding: 0; border: 0; overflow: hidden; }
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: visible;
+  white-space: nowrap;
+}
 
 div.left {
   float: left;
