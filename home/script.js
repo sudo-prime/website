@@ -1,6 +1,5 @@
 const NUM_PICTURES = 262;  // The number of pictures in the images folder.
 const USER_NAME = "Nick";  // The name you want to display. Most likely yours!
-const DINGUS_NAME = "Sam"; // The name of your dingus of choosing.
 
 document.images['RandomImg'].src = 'images/image_' + Math.floor(NUM_PICTURES * Math.random()) + '.jpg';
 
@@ -25,7 +24,6 @@ var phrases = [
   ['Hello again,', USER_NAME + '!'],
   ['Yo, my guy.', ''],
   ['Yo, my guy.', ''],
-  ['Uh oh, is ' + DINGUS_NAME, ' watching...?'], // REMOVE LINE IF NO DINGUS
   ['Hi, ' + USER_NAME + '!', ''],
   ['Hi, ' + USER_NAME + '!', ''],
   ['Hi, ' + USER_NAME + '!', ''],
